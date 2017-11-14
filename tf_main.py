@@ -18,8 +18,7 @@ model = ResNet50(input_shape = (64, 64, 3), classes = len(classes))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # fit model
-#model.fit(X_train, Y_train, epochs = 20, batch_size = 32)
-model_history = model.fit(X_train, Y_train, epochs = 2, batch_size = 32)
+model_history = model.fit(X_train, Y_train, epochs = 20, batch_size = 32)
 
 # plot accuracy/loss
 plot_model_history(model_history)
