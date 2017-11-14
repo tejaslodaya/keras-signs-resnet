@@ -33,6 +33,6 @@ Outcome:
 
 ![alt cost](https://raw.githubusercontent.com/tejaslodaya/keras-signs-resnet/master/images/acc_loss.png)
 
-2.  Test Accuracy - 0.875
+2.  Test Accuracy - 0.875 <br/>
     Loss - 0.77
 3.  TODO- to overcome overfitting, add L2 or dropout regularization
