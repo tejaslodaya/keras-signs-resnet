@@ -1,8 +1,13 @@
-ResNet50 is a powerful model for image classification when it is trained for an adequate number of iterations.
+The main benefit of a very deep network is that it can represent very complex functions. It can also learn features at many different levels of abstraction, from edges (at the lower layers) to very complex features (at the deeper layers). However, a huge barrier to training them is vanishing gradients.
 
-Training set: 1080 pictures (64 by 64 pixels) of signs representing numbers from 0 to 5 (180 pictures per number).
+ResNets has 2 advantages:
+1. A "shortcut" or a "skip connection" allows the gradient to be directly backpropagated to earlier layers reducing the vanishing gradient problem
+![alt shortcut](https://raw.githubusercontent.com/tejaslodaya/keras-signs-resnet/master/images/skip_connection_kiank.png?token=AKA30avrWb_4g5H9S1DP-qSJBB-U5hCbks5aE7h8wA%3D%3D)
+2. ResNet blocks with the shortcut makes it very easy for one of the blocks to learn an identity function
 
-Test set: 120 pictures (64 by 64 pixels) of signs representing numbers from 0 to 5 (20 pictures per number).
+Training set: 1080 pictures (64 by 64 pixels) of signs representing numbers from 0 to 5 (180 pictures per number)
+
+Test set: 120 pictures (64 by 64 pixels) of signs representing numbers from 0 to 5 (20 pictures per number)
 
 Here are examples for each number, and corresponding labels converted to one-hot. 
 ![alt signs_dataset](https://raw.githubusercontent.com/tejaslodaya/tensorflow-signs-nn/master/signs_dataset.png)
